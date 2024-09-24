@@ -1,0 +1,152 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a0dad, #a74cbe);
+    color: #fff;
+    padding: 20px;
+    line-height: 1.6;
+    transition: background 0.5s ease;
+}
+
+.content {
+    padding-top: 80px; 
+    min-height: calc(100vh - 80px); 
+}
+a {
+    color: transparent; 
+    background: linear-gradient(90deg, #4d1e70, #620586, #1d042e); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    text-decoration: none; 
+    transition: transform 0.2s; 
+    display: inline-block; 
+}
+
+a:hover {
+    transform: scale(1.05); 
+}
+
+
+h1, h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.auth-container, .home-container, .profile-container, .tasks-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    transform: scale(1.02);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8e44ad; 
+    color: #ffffff; 
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #732d91; 
+    transform: scale(1.05);
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+li button {
+    margin-left: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .auth-container, .home-container, .profile-container, .tasks-container {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    input {
+        padding: 8px;
+    }
+}
