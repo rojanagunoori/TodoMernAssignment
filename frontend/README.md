@@ -1,70 +1,330 @@
-# Getting Started with Create React App
+# 📝 TaskMaster - Full Stack Todo Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<video src="/TodoMernAssignment/frontend/public/todoassignment.mp4" controls="controls" style="max-width: 100%;">
+</video>
 
-## Available Scripts
+![Screenshot 1](/TodoMernAssignment/frontend/public/todoassigmnent1.png)
+![Screenshot 2](/TodoMernAssignment/frontend/public//todoassigmnet2.png)
+![Screenshot 3](/TodoMernAssignment/frontend/public/todoassigmnet3.png)
 
-In the project directory, you can run:
+A full-stack Todo application built using **React (Frontend)** and **Node.js + Express + SQLite (Backend)** with secure JWT authentication.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔗 Important Links
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🌐 Live App (Frontend): https://taskmaster19.netlify.app/
+- ⚙️ Backend API: https://taskmaster-backend-w4y3.onrender.com/
+- 💻 Frontend Repo: https://github.com/rojanagunoori/TaskMaster-frontend
+- 🔧 Backend Repo: https://github.com/rojanagunoori/TaskMaster-backend
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📌 Project Overview
 
-### `npm run build`
+TaskMaster is a full-stack task management web application designed to help users efficiently organize and track their daily activities. It provides a seamless experience where users can securely authenticate, manage personal tasks, and maintain their profile information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application follows a **client-server architecture**, with a React-based frontend communicating with a RESTful API built using Node.js and Express. SQLite is used as a lightweight database for storing user and task data.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project demonstrates core full-stack development concepts such as:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Authentication and authorization using JWT
+- CRUD operations with persistent storage
+- API integration between frontend and backend
+- State management and protected routing in React
+- Deployment of a full-stack application
 
-### `npm run eject`
+It is designed to be scalable and can be extended with advanced features like filtering, reminders, and cloud database integration.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 🔐 **User Authentication System**
+  Secure signup and login functionality using hashed passwords and JWT tokens.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 🔑 **JWT-Based Authorization**
+  Protected API endpoints ensure that only authenticated users can access their data.
 
-## Learn More
+- 👤 **Profile Management**
+  Users can view, update, and delete their account information.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- ✅ **Complete Task Management (CRUD)**
+  Users can create, read, update, and delete tasks with real-time updates in the UI.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 📱 **Responsive User Interface**
+  Mobile-friendly design with a collapsible navigation menu for smaller screens.
 
-### Code Splitting
+- 🔔 **Real-Time Feedback with Toast Notifications**
+  Instant success and error messages improve user experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- 🧭 **Protected Routes in Frontend**
+  Prevents unauthorized access to sensitive pages like profile and tasks.
 
-### Analyzing the Bundle Size
+- ⚡ **Fast and Lightweight Backend**
+  Uses SQLite for quick setup and efficient data handling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📁 Folder / Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+TaskMaster/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Auth.js
+│   │   │   ├── Tasks.js
+│   │   │   ├── Profile.js
+│   │   │   ├── Navbar.js
+│   │   │   └── ...
+│   │   ├── context/
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── config.js
+│
+├── backend/
+│   ├── server.js
+│   ├── db.js
+│   ├── database.db
+│   └── .env
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🛠️ Tech Stack / Environment
 
-### Deployment
+### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- React.js
+- React Router DOM
+- Axios
+- React Toastify
+- CSS
 
-### `npm run build` fails to minify
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Node.js
+- Express.js
+- SQLite3
+- JSON Web Token (JWT)
+- bcryptjs
+
+---
+
+## ⚙️ Installation / Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/rojanagunoori/TaskMaster-frontend.git
+git clone https://github.com/rojanagunoori/TaskMaster-backend.git
+```
+
+---
+
+### 2️⃣ Backend Setup
+
+```bash
+cd TaskMaster-backend
+npm install
+```
+
+Create `.env` file:
+
+```env
+PORT=5000
+JWT_SECRET=your_secure_secret
+MONGO_URL=your_mongo_url
+```
+
+Run backend:
+
+```bash
+node server.js
+```
+
+---
+
+### 3️⃣ Frontend Setup
+
+```bash
+cd TaskMaster-frontend
+npm install
+npm start
+```
+
+---
+
+## 🔐 Environment Variables
+
+### Backend
+
+```env
+MONGO_URL=your_mongo_url
+PORT=5000
+JWT_SECRET=your_secure_secret
+```
+
+---
+
+## 📡 API Usage
+
+### 🔐 Authentication
+
+```http
+POST /signup
+POST /login
+```
+
+### 👤 Profile
+
+```http
+GET /profile
+PUT /updateprofile
+DELETE /deleteprofile
+```
+
+### 📌 Tasks
+
+```http
+GET /gettasks
+POST /createtask
+PUT /updatetasks/:id
+DELETE /deletetasks/:id
+```
+
+### Example Request
+
+```js
+axios.get("/gettasks", {
+  headers: {
+    Authorization: `Bearer ${token}`,
+  },
+});
+```
+
+---
+
+## 🧩 Key Components
+
+### Frontend
+
+- **Auth.js**
+  Handles both login and signup functionality with dynamic form switching. Integrates with backend APIs and manages authentication state.
+
+- **Tasks.js**
+  Core component for task management. Supports creating, updating, deleting, and displaying tasks with API integration and state updates.
+
+- **Profile.js**
+  Displays user information and allows editing or deleting the account. Communicates securely with protected backend endpoints.
+
+- **Navbar.js**
+  Provides navigation across the application. Includes responsive design with a mobile toggle menu and conditional rendering based on authentication status.
+
+---
+
+### Backend
+
+- **server.js**
+  Main server file containing API routes, middleware (JWT authentication), and request handling logic. Acts as the backbone of the application.
+
+- **db.js**
+  Initializes and manages the SQLite database. Defines schema for users and tasks, ensuring relational integrity.
+
+---
+
+## 🔒 Security
+
+- Password hashing using **bcrypt**
+- Token-based authentication using **JWT**
+- Protected routes via middleware
+- Authorization headers required for secured endpoints
+
+---
+
+## ⚔️ Challenges Faced During Development
+
+- 🔐 **JWT Authentication Handling**
+  Implementing secure token-based authentication and ensuring tokens are correctly verified for protected routes required careful middleware design.
+
+- 🔄 **Protected Routing in React**
+  Managing user sessions and redirecting users based on authentication state was challenging, especially with page refresh scenarios.
+
+- 🌐 **CORS Issues During Deployment**
+  Configuring CORS correctly between Netlify (frontend) and Render (backend) required debugging origin policies and headers.
+
+- 🔗 **Frontend-Backend Synchronization**
+  Ensuring consistent API communication and handling different environments (local vs production) required proper configuration management.
+
+- 🐞 **Debugging Asynchronous API Calls**
+  Handling errors in async operations and preventing UI crashes required robust error handling strategies.
+
+---
+
+## 🚧 Future Improvements
+
+- 🗂️ **Task Categories & Filtering**
+  Allow users to categorize tasks (e.g., Work, Personal) and filter them for better organization.
+
+- 📄 **Pagination & Performance Optimization**
+  Improve performance for large datasets by implementing pagination or lazy loading.
+
+- ⏰ **Due Dates & Reminders**
+  Add deadlines and notification systems to enhance productivity.
+
+- 🎨 **Enhanced UI/UX**
+  Introduce animations, better design systems, and improved accessibility.
+
+- ☁️ **Database Upgrade (SQLite → MongoDB)**
+  Transition to a scalable cloud database for production-level applications.
+
+- 🧪 **Testing Implementation**
+  Add unit tests and integration tests to improve reliability and maintainability.
+
+- 🔐 **Advanced Security Enhancements**
+  Implement features like refresh tokens, rate limiting, and input validation.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+Steps:
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a Pull Request
+
+---
+
+## 🙏 Acknowledgments
+
+- React Documentation
+- Express.js Docs
+- SQLite Docs
+- JWT & bcrypt libraries
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🙋‍♀️ Author / Contact
+
+**Nagunoori Roja**
+
+- 📧 Email: [nagunooriroja@gmail.com](mailto:nagunooriroja@gmail.com)
+- 🌐 GitHub: [https://github.com/rojanagunoori](https://github.com/rojanagunoori)
+- 🌐 LinkedIn: [https://www.linkedin.com/in/nagunoori-roja-51b936267/](https://www.linkedin.com/in/nagunoori-roja-51b936267/)
+- 🌐 Personal Portfolio: [portfolio-roja.netlify.app](https://portfolio-roja.netlify.app/)
+- 🌐 LeetCode: [https://leetcode.com/u/dSdsi6XkI8/](https://leetcode.com/u/dSdsi6XkI8/)
+- 🌐 Kaggle: [https://www.kaggle.com/nagunooriroja](https://www.kaggle.com/nagunooriroja)
+
+---
