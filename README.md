@@ -1,14 +1,23 @@
 # 📝 TaskMaster - Full Stack Todo Application
 
+## 🎥 Demo
+
 <video controls style="max-width: 100%;">
-  <source src="https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/frontend/public/todoassignment.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/public/todoassignment.mp4" type="video/mp4">
 </video>
 
-![Screenshot 1](https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/frontend/public/todoassigmnent1.png)
+<!-- 👉 If video doesn't play, click here:
+[▶ Watch Demo](https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/public/todoassignment.mp4) -->
 
-![Screenshot 2](https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/frontend/public/todoassigmnet2.png)
+---
 
-![Screenshot 3](https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/frontend/public/todoassigmnet3.png)
+## 📸 Screenshots
+
+![Screenshot 1](https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/public/todoassigmnent1.png)
+
+![Screenshot 2](https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/public/todoassigmnet2.png)
+
+![Screenshot 3](https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/public/todoassigmnet3.png)
 
 A full-stack Todo application built using **React (Frontend)** and **Node.js + Express + SQLite (Backend)** with secure JWT authentication.
 
