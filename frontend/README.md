@@ -4,7 +4,7 @@
 </video>
 
 ![Screenshot 1](/TodoMernAssignment/frontend/public/todoassigmnent1.png)
-![Screenshot 2](/TodoMernAssignment/frontend/public//todoassigmnet2.png)
+![Screenshot 2](/TodoMernAssignment/frontend/public/todoassigmnet2.png)
 ![Screenshot 3](/TodoMernAssignment/frontend/public/todoassigmnet3.png)
 
 A full-stack Todo application built using **React (Frontend)** and **Node.js + Express + SQLite (Backend)** with secure JWT authentication.
