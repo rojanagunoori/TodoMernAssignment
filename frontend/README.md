@@ -3,7 +3,6 @@
 <video controls style="max-width: 100%;">
   <source src="https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/frontend/public/todoassignment.mp4" type="video/mp4">
 </video>
-[▶ Watch Demo](https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/frontend/public/todoassignment.mp4)
 
 ![Screenshot 1](https://raw.githubusercontent.com/rojanagunoori/TodoMernAssignment/main/frontend/public/todoassigmnent1.png)
 
